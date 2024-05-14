@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/dda44d2e3b.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@500&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body >
 <header>
     <nav >
         <a href="index.html"><img src="images/logo.png" alt=""></a>
-        <div class="nav-links">
-            
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" ></i>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -23,7 +24,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-       
+       <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
 
     <div class="text-box">
@@ -35,7 +36,22 @@
         <a href="about.html" class="hero-btn">Visit Us To Know More</a>
     </div>
 
+
+
+
+   
 </header>
  
+
+<script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-220px";
+    }
+</script>
+
 </body>
 </html>
