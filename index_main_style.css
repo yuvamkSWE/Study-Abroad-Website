@@ -23,5 +23,13 @@
 
 .streams .card-body{
 
-    
+    background-color: #fff3f3;
+    border-radius: 10px;
+
+   
+
+}
+
+.streams .card-body:hover{
+    box-shadow:0 0 20px 0px rgba(0, 0, 0, 0.2) ;
 }
