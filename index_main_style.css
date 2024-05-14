@@ -33,3 +33,85 @@
 .streams .card-body:hover{
     box-shadow:0 0 20px 0px rgba(0, 0, 0, 0.2) ;
 }
+
+
+.countries{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.countries h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.countries p{
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    line-height: 22px;
+    padding: 10px;
+}
+.countries .card{
+    border: none;
+}
+
+.card1{
+    min-height: 60vh;
+    
+    width: 100%;
+    background-image: url(images/london.png);
+    background-position: center;
+    background-size: cover;
+    transition: 3s;
+}
+.card2{
+    min-height: 60vh;
+    
+    width: 100%;
+    background-image: url(images/newyork.png);
+    background-position: center;
+    background-size: cover;
+}
+.card3{
+    min-height: 60vh;
+    
+    width: 100%;
+    background-image: url(images/washington.png);
+    background-position: center;
+    background-size: cover;
+}
+.country{
+    display: none;
+}
+.card1:hover{
+    background-image: linear-gradient(rgba(192, 26, 40, 0.5),rgba(173, 25, 47, 0.5)), url(images/london.png);
+    transition: 3s;
+    .country{
+        display: inline;
+        margin-top: 50%;
+        transition: 3s;
+        color: white;
+    }
+}
+.card2:hover{
+    background-image: linear-gradient(rgba(192, 26, 40, 0.5),rgba(173, 25, 47, 0.5)), url(images/newyork.png);
+    transition: 3s;
+    .country{
+        display: inline;
+        margin-top: 50%;
+        transition: 3s;
+        color: white;
+    }
+}
+.card3:hover{
+    background-image: linear-gradient(rgba(192, 26, 40, 0.5),rgba(173, 25, 47, 0.5)), url(images/washington.png);
+    transition: 3s;
+    .country{
+        display: inline;
+        margin-top: 50%;
+        transition: 3s;
+        color: white;
+    }
+}
